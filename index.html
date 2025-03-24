@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Specifies that the content of the webpage is in English, while <html> alone does not define a language. -->
+<head>
+    <meta charset="UTF-8"> <!-- Ensures all characters and symbols like "é, "ç," "©," and text in other languages such as Chinese, Arabic, or Russian are displayed correctly. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes your website responsive on different devices. -->
+    <title>Scratchpad</title>
+    <link rel="icon" href="icon.webp" type="image/webp">
+    <link rel="stylesheet" href="scratchpad.css">
+</head>
+<body>
+    <h1>Scratchpad</h1>
+    
+    <!-- Input lets users enter data in a form, type="text" is for typing words, and id="item-input" is the box's name. -->
+    <input type="text" id="note-input" placeholder="New Entry" /> <!-- placeholder="Add an item" shows a message inside the box. -->
+
+    <button id="add-note-button">Add Note</button>
+    
+    <!-- A list that will hold your notes. -->
+    <ul id="draft-board"></ul> 
+
+    <button id="clear-all">Clear All</button>
+
+    <script src="scratchpad.js"></script>
+</body>
+</html>

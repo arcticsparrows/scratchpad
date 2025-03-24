@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  display: flex; /* Makes <body> a box that arranges items in a row or column and lets you move them easily. */
+  flex-direction: column; /* Puts items in a vertical line, one below the other. */
+  align-items: center; /* Moves items to the center from left to right. */
+  justify-content: center; /* Moves items to the center from top to bottom. */
+  height: 100vh; /* Makes the page take up the full height of the screen. */
+  margin: 0; /* Removes extra space around the page so everything is perfectly aligned. */
+  background-image: url(background.gif);
+  background-size: cover;
+}
+
+h1 {
+  color: #75aa34;
+  font-family: "Press Start 2P", cursive;
+  font-size: 14px;
+  transform: scale(1, 1.5); /* Makes element 50% taller while keeping its width the same.*/
+  /*
+   Without the numbers, it is scale(x, y), where x refers to the width (x-axis) and y refers to the height (y-axis), both multiplied by the given values. In the example above, 1 keeps the width the same because the original size multiplied by 1 remains unchanged.
+  */
+}
+
+#note-input {
+  padding: 10px; /* Adds space inside the input box. */
+  margin: 10px; /* Adds space outside the input box. */
+  border-radius: 10px;
+  border: 3px solid black;
+  width: 200px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 8px;
+  transform: scale(1, 1.5); /* Makes element 50% taller while keeping its width the same.*/
+}
+
+#add-note-button {
+  padding: 7px 15px;
+  margin: 10px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  border: none;
+  background-color: #75aa34;
+  color: white;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 8px;
+  transform: scale(1, 1.5);
+}
+
+#add-note-button:hover {
+  background-color: #4A6E22;
+}
+
+#draft-board {
+  list-style-type: none; /* Removes the default bullets from the list items */
+  padding: 0; /* Removes extra space inside the list <ul>. */
+}
+
+#draft-board li {
+  background-color: #d1ddc4;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #75aa34;
+  width: 170px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 8px;
+  line-height: 12px;
+}
+
+button { /* Two delete buttons. */
+  background-color: #006cff;
+  color: white;
+  margin: 8px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 7px;
+  transform: scale(1, 1.5);
+}
+
+button:hover {
+  background-color: #004D99;
+}
+
+#clear-all {
+  background-color: #030094;
+  color: white;
+  padding: 7px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 5px;
+}
+
+#clear-all:hover {
+  background-color: #01005D;
+}
